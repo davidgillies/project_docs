@@ -1,0 +1,20 @@
+site_name: Docs
+pages:
+- Projects: index.md
+- XML Editor:
+    - Intro: xml_editor/index.md 
+    - Installation: xml_editor/install.md
+    - Configuration: xml_editor/config.md
+    - Development: xml_editor/dev.md
+- Questionnaire:
+    - Intro: fsq/index.md
+    - Installation: fsq/install.md
+    - Configuration: fsq/config.md
+    - Development: fsq/dev.md
+- Renderer:
+    - Overview: fs_renderer/index.md
+    - Installation: fs_renderer/install.md
+    - Configuration: fs_renderer/config.md
+    - Development: fs_renderer/dev.md
+theme: slate
+

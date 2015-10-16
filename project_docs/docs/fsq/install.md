@@ -1,42 +1,71 @@
-# Project Documentation
 
 ##Installation
 
-Set up a local virtualenv in a selected directory.
+Django-fsq is a package which works with Django.  Install with pip
 
-    virtualenv .
+    pip install git+git://github.com/davidgillies/django-fsq
 
-Activate the environment
+This will install it directly into your site-packages directory.  If you are using virtualenv, this will be inside the Lib folder at your virtualenv's home directory.  Alternatively if you can install it like this
 
-    Scrits\activate
+    pip install -e git+git://github.com/davidgillies/django-fsq#django-fsq
 
-Download or clone the files from the relevant project from the repository e.g.
+This will create a source folder in your virtulenv home folder and clones the entire package to that folder.  This requires git to be installed on your system.  You can work with the code directly in this location and use git there as normal.
 
-    git clone https://github.com/davidgillies/fs_api
+##Config
 
-The structure looks like:
-fs_api/ # Git repo root includes .gitignore, and README.md
-    .gitignore # a file list what git should not add to the repo
-    README.md 
-    requirements.txt # a list of requirements that pip will install.
-    fs_proj/ # Project root contains manage.py, apps
-        manage.py #
-        fs_proj/ # Project Settings root the projects settings
-        fs_renderer/ # A project is made up of apps.
-        xmlfiles/ # a place for the xml files.
+There are 2 options for using the package.
 
-Go into the Git repo root, e.g.
+###Case 1 - Normal Django using default database
 
-    cd fs_api
+In your project settings, add to INSTALLED_APPS
 
-Now install the project requirements
+```python
+'questionnaire',
+'import_export',
+```
 
-    pip install -r requirements.txt
+then
+```python
+python manage.py migrate
+```
 
-Note in some cases you may receives admin required warnings on Windows, just click `cancel` if they come up.
+###Case 2 - Set up with pre-existing MySQL database
+For any pre-existing database you will have to set up the backend in your settings file in the normal way.  For MySQL you can use pymysql
 
-Most of the requirements will be installed in your virtualenv's lib/site-packages directory.  If any of the requirements are installed from git repos they may be installed in a src directory in your virtualenv's root beside the lib directory.
+    pip install pymsql
 
-If you need to make changes to installed code it is best to fork the code yourself, don't edit it in the lib folder.  The src folder contain git checkouts of the installed app code and you can manage these apps from this place as they are attached to git.
+To use pymysql add in your manage.py immediately under `import sys`
 
+```python
+    try:
+        import pymysql
+        pymysql.install_as_MySQLdb()
+    except ImportError:
+        pass 
+```
 
+In your project settings, add to INSTALLED_APPS
+
+    'questionnaire',
+    'import_export',
+    
+Also in your project settings add your DB details, e.g. :
+
+    'db3': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mrc_epid_fenland',
+        'USER': 'david',
+        'PASSWORD': '*****',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    },
+    
+Also in the project settings add the setting
+
+    DATABASE_ROUTERS = ['questionnaire.routers.PlayRouter',]
+
+The db name in your django settings has to be 'db3' in order for the routers in the questionnaire to connect up.
+    
+##Uninstall
+
+    pip uninstall django-fsq

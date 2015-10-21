@@ -1,26 +1,33 @@
 site_name: Docs
 pages:
 - Projects: index.md
-- XML Editor:
-    - Intro: xml_editor/index.md 
-    - Installation: xml_editor/install.md
-    - Usage: xml_editor/config.md
-    - Development: xml_editor/dev.md
-- Questionnaire:
-    - Intro: fsq/index.md
-    - Installation: fsq/install.md
-    - Configuration: fsq/config.md
-    - Development: fsq/dev.md
-- Renderer:
-    - Overview: fs_renderer/index.md
-    - Installation: fs_renderer/install.md
-    - Configuration: fs_renderer/config.md
-    - Development: fs_renderer/dev.md
 - XML Objectifier:
     - Intro: xml_objectifier/index.md
     - Installation: xml_objectifier/install.md
     - Usage: xml_objectifier/usage.md
+    - Structure: xml_objectifier/project-structure.md
+    - Dependencies: xml_objectifier/dependencies.md
+- Questionnaire:
+    - Intro: fsq/index.md
+    - Installation: fsq/install.md
+    - Usage: fsq/usage.md
+    - Structure: fsq/project-structure.md
+    - Dependencies: fsq/dependencies.md
+- XML Editor:
+    - Intro: xml_editor/index.md 
+    - Installation: xml_editor/install.md
+    - Usage: xml_editor/usage.md
+    - Structure: xml_editor/project-structure.md
+    - Dependencies: xml_editor/dependencies.md
+- Renderer:
+    - Overview: fs_renderer/index.md
+    - Installation: fs_renderer/install.md
+    - Usage: fs_renderer/usage.md
+    - Configuration: fs_renderer/config.md
+    - Development: fs_renderer/dev.md
+    - Structure: fs_renderer/project-structure.md
+    - Dependencies: fs_renderer/dependencies.md
 - Tips:
     - Shortcuts: tips/shortcuts.md
-theme: slate
+theme: bootstrap
 

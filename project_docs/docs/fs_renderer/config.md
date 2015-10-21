@@ -1,42 +1,23 @@
-# Project Documentation
+# Configuration
 
-##Installation
+There is a limited number of configuration options in fs_renderer/local_settings.py
 
-Set up a local virtualenv in a selected directory.
+##Plugins
 
-    virtualenv .
+PLUGINS is a dictionary matching plugin name to a plugin class.
 
-Activate the environment
+TESTING is a boolean which if set to True will add HTML header and footer to the templates along aith a submit button for testing.  This is set for each section object and can be used in the templates to show html you would only like to show in testing.  This is done in the following way:
 
-    Scrits\activate
+```
+    {% if section.testing %}
+        <p>Some additional code, can be anything, javascript, styling etc.</p>
+    {% endif %}
+```
 
-Download or clone the files from the relevant project from the repository e.g.
+CUSTOM is set to False by deafult but if set to True will use the CustomApplication object in fs_renderer/custom_logic.py.  Recently a new requirement to possibly load multiple XML files will require a change in this style.  Application objects can be loaded per request for different XML files or instantiated at startup and reused.  This is not set up by deafult.
 
-    git clone https://github.com/davidgillies/fs_api
+XML_FILE is set to point to Questionnaire XML file as the application objects instantiated in the views depend on it.  The new requirement of having to load multiple XML files may make it redundant.
 
-The structure looks like:
-fs_api/ # Git repo root includes .gitignore, and README.md
-    .gitignore # a file list what git should not add to the repo
-    README.md 
-    requirements.txt # a list of requirements that pip will install.
-    fs_proj/ # Project root contains manage.py, apps
-        manage.py #
-        fs_proj/ # Project Settings root the projects settings
-        fs_renderer/ # A project is made up of apps.
-        xmlfiles/ # a place for the xml files.
 
-Go into the Git repo root, e.g.
-
-    cd fs_api
-
-Now install the project requirements
-
-    pip install -r requirements.txt
-
-Note in some cases you may receives admin required warnings on Windows, just click `cancel` if they come up.
-
-Most of the requirements will be installed in your virtualenv's lib/site-packages directory.  If any of the requirements are installed from git repos they may be installed in a src directory in your virtualenv's root beside the lib directory.
-
-If you need to make changes to installed code it is best to fork the code yourself, don't edit it in the lib folder.  The src folder contain git checkouts of the installed app code and you can manage these apps from this place as they are attached to git.
 
 

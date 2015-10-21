@@ -30,11 +30,13 @@ A version that uses relation databases.
 
 ##Python Notebooks
 [link]
-A set of python notebooks to help newbies to Python experiment and learn the basics.
+A set of python notebooks to help newbies to Python experiment and learn the basics.  
 
-##Project Docs
-[link]
-This documentation.
+If you click on your Start Menu on Windows and select 'All Programs', click on the Anaconda folder, then click on IPython (Py 2.7) Notebook.  This will start a command prompt screen, just ignore it, then it will start a tab in your browser with a folder and file listing.  
+
+The choice of this location is noted in the properties of the shortcut.  You can instead right click on the IPython (Py 2.7) Notebook shortcut in the menu and select properties, you can then change this location if you wish by editing the 'Start in' line.
+
+You can download the notebooks for the documentation to your directory from **[here](https://github.com/davidgillies/python_notebooks)**.  Click 'Download ZIP' button to get the lot and extract them to the folder inside the target folder iPython ntoebooks is using.  That will make it easy for you to navigate to them in the notebooks interface.  
 
 ##An Example App
 [link]

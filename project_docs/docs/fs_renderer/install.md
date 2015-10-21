@@ -1,5 +1,3 @@
-# Project Documentation
-
 ##Installation
 
 Set up a local virtualenv in a selected directory.
@@ -15,26 +13,13 @@ Activate the environment
 Download or clone the files from the relevant project from the repository e.g.
 
 ```sh
-git clone https://github.com/davidgillies/fs_api
+git clone https://github.com/davidgillies/fs_api2
 ```
-
-The structure looks like:
-<pre>
-fs_api/ 
-    .gitignore 
-    README.md 
-    requirements.txt 
-    fs_proj/ 
-        manage.py
-        fs_proj/ 
-        fs_renderer/
-        xmlfiles/ 
-</pre>
 
 Go into the Git repo root, e.g.
 
 ```sh
-cd fs_api
+cd fs_api2
 ```
 
 Now install the project requirements

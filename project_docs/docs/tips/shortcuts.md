@@ -7,7 +7,7 @@ It is recommended to use virtual environments to separate out environments.  Wor
 2. Right click on it and select Properties.
 3. On the shortcut tab change the Target setting to:
     `%windir%\system32\cmd.exe /k "U:\Data\fiber\Scripts\activate" # POINT TO THE VIRTUALENV OF YOUR CHOOSING!`
-4. Then chnage the Start in setting to point at where you would like the shortcut to take you.  In my case to my django project root where my manage.py file is e.g.
+4. Then change the Start in setting to point at where you would like the shortcut to take you.  In my case to my django project root where my manage.py file is e.g.
     `U:\Data\fiber\my_proj`
 5. Now select the General tab and put a suitable title in the box.
 6. Click ok.

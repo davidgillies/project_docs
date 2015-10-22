@@ -13,7 +13,7 @@ Activate the environment
 Download or clone the files from the relevant project from the repository e.g.
 
 ```sh
-git clone https://github.com/davidgillies/fs_api2
+git clone https://github.com/cam-mrc-epid/fs_api2
 ```
 
 Go into the Git repo root, e.g.

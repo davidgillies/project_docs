@@ -9,19 +9,27 @@ It can be a pain to manage multiple virtualenvs but it is possible to set up des
 ##Projects
 
 ###XML Objectifier
-[link]
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/xml_objectifier](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/xml_objectifier)
+* [https://github.com/cam-mrc-epid/xml-objectifier](https://github.com/cam-mrc-epid/xml-objectifier)
+
 This is a base package that the XML Editor prototype and the Form System HTML Renderer Extension are based on.  It converts XML files into an object structure.
 
 ###XML Editor - Django-Q-Tree
-[link]
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-q-tree](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-q-tree)
+* [https://github.com/cam-mrc-epid/django-q-tree](https://github.com/cam-mrc-epid/django-q-tree)
+
 Converts the XML into an object structure that can allow importing and exporting of XML files.
 
 ###Django FSQ - Questionnaire Models for Django
-[link]
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-dsq](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-dsq)
+* [https://github.com/cam-mrc-epid/django-fsq](https://github.com/cam-mrc-epid/django-fsq)
+
 Questionnaire Models.  A set of django models that can be used to connect to the Form System Database.
 
 ###Form System HTML Renderer Extension
-[link]
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/fs_api2](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/fs_api2)
+* [https://github.com/cam-mrc-epid/fs_api2](https://github.com/cam-mrc-epid/fs_api2)
+
 A version of the HTML Renderer that uses the Django FSQ Questionnaire models.
 
 ###Form System HTML Renderer Extension
@@ -29,7 +37,9 @@ A version of the HTML Renderer that uses the Django FSQ Questionnaire models.
 A version that uses relation databases.  
 
 ###Python Notebooks
-[link]
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/python_notebooks](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/python_notebooks
+* [https://github.com/cam-mrc-epid/python_notebooks](https://github.com/cam-mrc-epid/python_notebooks)
+
 A set of python notebooks to help newbies to Python experiment and learn the basics.  
 
 If you click on your Start Menu on Windows and select 'All Programs', click on the Anaconda folder, then click on IPython (Py 2.7) Notebook.  This will start a command prompt screen, just ignore it, then it will start a tab in your browser with a folder and file listing.  
@@ -39,10 +49,14 @@ The choice of this location is noted in the properties of the shortcut.  You can
 You can download the notebooks for the documentation to your directory from **[here](https://github.com/davidgillies/python_notebooks)**.  Click 'Download ZIP' button to get the lot and extract them to the folder inside the target folder iPython ntoebooks is using.  That will make it easy for you to navigate to them in the notebooks interface.  
 
 ###An Example App
-[link]
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-main](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-main)
+* [https://github.com/cam-mrc-epid/python_notebooks](https://github.com/cam-mrc-epid/python_notebooks)
+
 Used in the videos to demonstrate certain features.  
 
 ##Web Dev with Django videos
 The videos require a Raven login.  Access is restricted by an Access Control List setup for the collection.  Unfortunately access is setup on a per-video basis.  Currently access is available to Adam Dickinson, David Vaughan, Anna Melachrou, Jasmine Morris and Inge Loudon.
 
-(http://www.sms.cam.ac.uk/collection/2049733)[http://www.sms.cam.ac.uk/collection/2049733]
+[Web Dev with Django Collection](http://www.sms.cam.ac.uk/collection/2049733)
+
+[Projects Collection](http://sms.cam.ac.uk/collection/2094754)

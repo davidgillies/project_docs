@@ -8,6 +8,8 @@ You can subclass the Application class (fs_renderer/fs_apps.py) and override fun
 
 More recent requirements suggested that multiple XML files may be used in a single app.  Therefore it may be necessary to change this approach by having a custom class per XML file and loading them in the views as necessary.  For custom functionality it may be easier to use the plugins architecture.
 
+To use the custom_logic modules CustomApplication class you need to set CUSTOM to True in fs_renderer/local_settings.py.
+
 ##Plugins
 
 Plugins arose from the need to have extra functionality in the section interfaces that required the interface to build an unknown number of rows etc. or any more complicated interface that would be difficult to describe in the XML.  

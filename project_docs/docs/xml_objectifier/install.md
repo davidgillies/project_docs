@@ -10,6 +10,3 @@ XML Objectifier's install process will install lxml and bunch.
 
 
 
-##Issues
-
-Installation problems maybe had with Canopy's version of python.  If you are using Canopy ,use Canopy's backported from python3 virtual environment venv rather than virtualenv.  This is due to install problems with the lxml package.

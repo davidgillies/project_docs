@@ -4,6 +4,7 @@
 
 Django-fsq is a packaged app version of the models for the Forms System MySQL Database.  You need to have Django installed and add it to your project.
 
+##Features
 It provides models to make it easy to connect up to the form system and use Django's Object Relational Mapper (ORM) to work with the database.  It can be set up to use a local Sqlite database or another existing database.  
 
 It provides a router that allows connections to non-default databases.

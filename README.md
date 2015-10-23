@@ -1,4 +1,4 @@
-# project_docs
+# Project Documentation
 
 These project docs will render in Github but can be converted to a pretty html website using MkDocs.  Probably best set up in a virtual environment with virutalenv.
 

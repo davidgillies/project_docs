@@ -2,6 +2,8 @@
 
 This package is hosted at:
 
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/xml-objectifier/](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/xml-objectifier/)
+* [https://github.com/cam-mrc-epid/xml-objectifier](https://github.com/cam-mrc-epid/xml-objectifier)
 
 This package does the basic conversion of XML into an object structure of sections, question groups and questions.  It was separated out from the main project so it could be used in other projects.  It is ued in the XML Editor and the Forms System Renderer extension.  
 

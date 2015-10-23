@@ -1,6 +1,8 @@
 # Django FSQ
 
-[https://github.com/cam-mrc-epid/django-fsq]
+
+* [https://github.com/cam-mrc-epid/django-fsq](https://github.com/cam-mrc-epid/django-fsq)
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-fsq/](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-fsq/)
 
 Django-fsq is a packaged app version of the models for the Forms System MySQL Database.  You need to have Django installed and add it to your project.
 

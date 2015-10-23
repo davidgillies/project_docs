@@ -1,5 +1,8 @@
 #XML Editor
 
+* [https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-q-tree/](https://svn.mrc-epid.cam.ac.uk/private/MRC_Webforms_Python/django-q-tree/)
+* [https://github.com/cam-mrc-epid/django-q-tree](https://github.com/cam-mrc-epid/django-q-tree)
+
 This is a prototype editor for the XML files.  It converts XML into a tree structure.  The tree structure has various class types that provides different properties for the various parts of the tree, Sections, Question Groups, Questions, etc.  These objects have a BaseTreeNode superclass which is used in the admin views.  Admin change-lists normally work with a single model type and in this case it is the BaseTreeNode model we use to set up the admin interface.  All our objects are of this type.  
 
 The admin views allow copy and paste of tree objects and also drag and drop.  
